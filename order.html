@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" 
+href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quick Stop - Order</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="order.html">Order</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Place Your Order</h1>
+
+        <p>Order ahead for quick collection at The Quick Stop</p>
+
+        <div class="order-form">
+            <form>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="coffee">Choose Your Coffee:</label>
+                <select id="coffee" name="coffee">
+                    <option value="americano">Americano - R25</option>
+                    <option value="cappuccino">Cappuccino - R30</option>
+                    <option value="latte">Latte - R32</option>
+                </select>
+
+                <label for="food">Choose Food:</label>
+                <select id="food" name="food">
+                    <option value="sandwich">Chicken Sandwich - R45</option>
+                    <option value="muffin">Muffin - R20</option>
+                    <option value="drink">Cold Drink - R18</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+                <label for="message">Special Request:</label>
+                <textarea id="message" name="message" rows="3"></textarea>
+
+                <button type="submit">Submit Order</button>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Quick Stop Coffee Shop</p>
+    </footer>
+
+</body>
+</html>
