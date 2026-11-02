@@ -5,7 +5,15 @@
 href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Quick Stop - Order</title>
+    
+<title>Place an Order | The Quick Stop</title>
+
+<meta name="description" content="Place your coffee and food orders online at The Quick Stop. Enjoy quality coffee and delicious snacks in Pretoria.">
+
+<meta name="keywords" content="order coffee online, coffee orders Pretoria, food orders, The Quick Stop">
+
+<meta name="author" content="The Quick Stop">
+
 </head>
 
 <body>
@@ -26,7 +34,7 @@ href="style.css">
         <p>Order ahead for quick collection at The Quick Stop</p>
 
         <div class="order-form">
-            <form>
+            <form id="orderForm"></form> 
 
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -46,7 +54,7 @@ href="style.css">
                 </select>
 
                 <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required> 
 
                 <label for="message">Special Request:</label>
                 <textarea id="message" name="message" rows="3"></textarea>
@@ -54,12 +62,16 @@ href="style.css">
                 <button type="submit">Submit Order</button>
 
             </form>
+<p id="orderResponse"></p> 
+
         </div>
     </main>
 
     <footer>
         <p>&copy; 2026 The Quick Stop Coffee Shop</p>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

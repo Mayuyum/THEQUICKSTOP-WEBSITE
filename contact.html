@@ -5,7 +5,14 @@
  href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Quick Stop - Contact</title>
+   
+<title>Contact Us | The Quick Stop Coffee Shop</title>
+
+<meta name="description" content="Contact The Quick Stop Coffee Shop in Pretoria for enquiries, customer support and more information about our services.">
+
+<meta name="keywords" content="contact The Quick Stop, coffee shop contact, Pretoria coffee shop, customer enquiries">
+
+<meta name="author" content="The Quick Stop">
 
 </head>
 
@@ -22,15 +29,40 @@
     </header>
 
     <main>
-        <h1>Contact Us</h1>
+    <h1>Contact Us</h1>
 
-        <p>Address: 123 Pretoria St.</p>
-        <p>Phone: 012 345 6789</p>
-    </main>
+    <p>Address: 123 Pretoria St.</p>
+    <p>Phone: 012 345 6789</p>
+
+    <h2>Send Us a Message</h2>
+
+    <form id="contactForm">
+
+        <label for="contactName">Your Name:</label>
+        <input type="text" id="contactName" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" required>
+
+        <label for="contactMessage">Your Message:</label>
+        <textarea id="contactMessage" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <p id="contactResponse"></p>
+
+</main>
 
     <footer>
         <p>&copy; 2026 The Quick Stop Coffee Shop</p>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
